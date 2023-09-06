@@ -6,7 +6,9 @@ import de.robv.android.xposed.XposedHelpers;
 
 public class Hook extends XC_MethodHook {
     private final static String[] ALLOWED_APPS = new String[]{
-            "org.mozilla.fennec_fdroid"
+        "org.mozilla.fennec_fdroid",
+        "io.github.forkmaintainers.iceraven",
+        "us.spotco.fennec_dos"
     };
     @Override
     protected void beforeHookedMethod(MethodHookParam param) {
