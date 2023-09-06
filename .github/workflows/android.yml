@@ -3,6 +3,8 @@ name: Android CI
 on:
   workflow_dispatch:
   push:
+    tags:
+      - "v*.*.*"
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
